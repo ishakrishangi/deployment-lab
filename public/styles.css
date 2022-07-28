@@ -27,7 +27,7 @@ header{
 }
 
 a {
-	color: #f6e2bf;
+	color: white;
     transition: all 0.3s ease 0s;
     font-size: 1em;
     text-decoration: none;
@@ -43,33 +43,55 @@ main {
   }
 
 .landing{
- background: linear-gradient(#550527, #A10702, #F44708, #FAA613, #f6e2bf);
- height: 750px;
- display: flex;
- justify-content: space-around;
-align-items: center;
+    background: linear-gradient(#550527, #A10702, #F44708, #FAA613, #f6e2bf, white);
+    height: 775px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+/* .landing-left-side{
+    position: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row-reverse;
+} */
 
 .bighead{
     color: #550527;
-    font-size: 150px;
+    font-size: 135px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .saucedesc{
     color: #550527;
     font-style: italic;
-    position: relative;
-    left: 65px;
+    /* position: relative;
+    left: 50px; */
     font-size: 20px;
 }
 
-.content{
-    background-color: #f6e2bf;
+.find-recipe {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;     
+    border-radius: 30px;  
+    color:#550527;
+    margin: 40px;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0 9px #550527;
+    padding: 15px 20px;
 }
 
-h2{
+
+
+.content{
+    background-color: white;
+}
+
+.page-section{
     color: #550527;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -78,3 +100,34 @@ h2{
     text-align: center;
 }
 
+
+#good-sauce{
+    text-align: right;
+    position: relative;
+    right: 65px;
+    font-size: 1.85em;
+}
+
+.recipe-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .recipe-item {
+    width: 32%;
+    /* padding-bottom: 32%; Same as width, sets height */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+    background-color: #E8AA42;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: #252324;
+  }
+  .recipe-image {
+    height: 200px;
+    width: 200px;
+  }
