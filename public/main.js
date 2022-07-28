@@ -1,6 +1,6 @@
 const addForm = document.querySelector('form');
 const nameInput = document.querySelector('input');
-const container = document.querySelector('section');
+const container = document.querySelector('#sauce-input-container');
 
 function putTheThingInTheView(res) {
     container.innerHTML = ''
